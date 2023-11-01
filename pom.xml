@@ -4,47 +4,29 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dastagiri</groupId>
-    <artifactId>blinkit</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>my-html-project</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>blinkit</name>
-    <description>A sample Maven Java project</description>
-
-    <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+    <name>My HTML Project</name>
+    <description>A sample Maven HTML project</description>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webResources>
+                        <resource>
+                            <directory>src/main/webapps</directory>
+                        </resource>
+                    </webResources>
                 </configuration>
             </plugin>
-                 <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
-           <artifactId>maven-war-plugin</artifactId>
-           <version>3.3.2</version>
-                  <configuration>
-        <failOnMissingWebXml>false</failOnMissingWebXml>
-                      </configuration>
-                  </plugin>
         </plugins>
     </build>
 </project>
