@@ -5,7 +5,7 @@
     <artifactId>blinkit</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
-    <name>blinkit</name>
+    <name>rkr0</name>
     <url>https://github.com/Dastagirisagar/Blinkitrk.git</url>
     <dependencies>
         <dependency>
