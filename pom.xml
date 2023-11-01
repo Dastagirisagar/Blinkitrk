@@ -6,7 +6,7 @@
     <packaging>war</packaging>
     <version>1.0</version>
     <name>blinkit</name>
-    <url>https://github.com/boxfuse/boxfuse-sample-java-war-hello</url>
+    <url>https://github.com/Dastagirisagar/Blinkitrk.git</url>
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
